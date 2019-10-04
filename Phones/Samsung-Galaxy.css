@@ -1,9 +1,12 @@
-/*
-* Media Queries CSS Samsung Galaxy
-* Jatniel Guzmán
-*/
+/**
+ * 
+ * @package  Media Queries CSS iPhone
+ * @author   Jatniel GUZMAN
+ * @license  MIT License
+ * @link     https://twitter.com/jatnielguzman
+ */
 
-/* ----------- Galaxy S3 ----------- */
+/* ----------- Samsung Galaxy S3 ----------- */
 
 /* Portrait and Landscape */
 @media screen 
@@ -31,7 +34,7 @@
 
 }
 
-/* ----------- Galaxy S4, S5 and Note 3 ----------- */
+/* ----------- Samsung Galaxy S4, S5 and Note 3 ----------- */
 
 /* Portrait and Landscape */
 @media screen 
@@ -59,7 +62,7 @@
 
 }
 
-/* ----------- Galaxy S6 ----------- */
+/* ----------- Samsung Galaxy S6 ----------- */
 
 /* Portrait and Landscape */
 @media screen 
