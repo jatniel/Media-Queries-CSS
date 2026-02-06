@@ -1,5 +1,5 @@
 /**
- * @package  Media Queries CSS - Samsung Galaxy
+ * @package  Media Queries CSS - Xiaomi
  * @author   Jatniel GUZMÁN
  * @license  MIT License
  * @link     https://github.com/jatniel
@@ -8,101 +8,45 @@
  */
 
 /* =========================================================
-   SAMSUNG GALAXY - Modern Media Query Breakpoints
+   XIAOMI - Modern Media Query Breakpoints
    =========================================================
 
-   Changes from legacy version:
-   - Replaced deprecated `device-width` / `device-height` with `width`
-   - Replaced `-webkit-device-pixel-ratio` with `resolution` (dppx)
-   - Removed discontinued models (S3, S4, S5, S6)
-   - Added Galaxy S21-S25, Z Flip, Z Fold, and A series
-   - Grouped models that share the same viewport
+   Covers Xiaomi flagship, Redmi, and POCO sub-brands.
+   Xiaomi is the #3 smartphone manufacturer worldwide.
 
-   Note: Android DPR values are often fractional (2.625, 2.8125, 3.75).
+   Note: Android DPR values are often fractional.
    Queries use the nearest integer floor for min-resolution.
 
    ========================================================= */
 
-/* ----------- Galaxy S21 / S22 / S23 / S24 / S25 ----------- */
-/* Viewport: 360 x 780 @ 3x */
+/* ----------- Xiaomi 14 / 15 ----------- */
+/* Viewport: 393 x 873 @ 3x */
 
 /* Portrait and Landscape */
 @media only screen
-  and (min-width: 360px)
-  and (max-width: 780px)
+  and (min-width: 393px)
+  and (max-width: 873px)
   and (min-resolution: 3dppx) {
 }
 
 /* Portrait */
 @media only screen
-  and (min-width: 360px)
-  and (max-width: 780px)
+  and (min-width: 393px)
+  and (max-width: 873px)
   and (min-resolution: 3dppx)
   and (orientation: portrait) {
 }
 
 /* Landscape */
 @media only screen
-  and (min-width: 360px)
-  and (max-width: 780px)
+  and (min-width: 393px)
+  and (max-width: 873px)
   and (min-resolution: 3dppx)
   and (orientation: landscape) {
 }
 
-/* ----------- Galaxy S21+ / S22+ / S23+ / S24+ / S25+ ----------- */
-/* Viewport: 384 x 854 @ 3x */
-
-/* Portrait and Landscape */
-@media only screen
-  and (min-width: 384px)
-  and (max-width: 854px)
-  and (min-resolution: 2dppx) {
-}
-
-/* Portrait */
-@media only screen
-  and (min-width: 384px)
-  and (max-width: 854px)
-  and (min-resolution: 2dppx)
-  and (orientation: portrait) {
-}
-
-/* Landscape */
-@media only screen
-  and (min-width: 384px)
-  and (max-width: 854px)
-  and (min-resolution: 2dppx)
-  and (orientation: landscape) {
-}
-
-/* ----------- Galaxy S21 Ultra / S22 Ultra / S23 Ultra ----------- */
-/* Viewport: 384 x 824 @ 3.75x */
-
-/* Portrait and Landscape */
-@media only screen
-  and (min-width: 384px)
-  and (max-width: 824px)
-  and (min-resolution: 3dppx) {
-}
-
-/* Portrait */
-@media only screen
-  and (min-width: 384px)
-  and (max-width: 824px)
-  and (min-resolution: 3dppx)
-  and (orientation: portrait) {
-}
-
-/* Landscape */
-@media only screen
-  and (min-width: 384px)
-  and (max-width: 824px)
-  and (min-resolution: 3dppx)
-  and (orientation: landscape) {
-}
-
-/* ----------- Galaxy S24 Ultra / S25 Ultra ----------- */
-/* Viewport: 412 x 915 @ 3x */
+/* ----------- Xiaomi 14 Pro / 15 Pro ----------- */
+/* Viewport: 412 x 915 @ 3.5x */
 
 /* Portrait and Landscape */
 @media only screen
@@ -127,22 +71,21 @@
   and (orientation: landscape) {
 }
 
-/* ----------- Galaxy Z Flip 4 / 5 / 6 ----------- */
-/* Main screen (unfolded): 412 x 915 @ 2.625x */
-/* Cover screen: not targetable via standard CSS */
+/* ----------- Xiaomi 14 Ultra / 15 Ultra ----------- */
+/* Viewport: 412 x 915 @ 3.75x */
 
 /* Portrait and Landscape */
 @media only screen
   and (min-width: 412px)
   and (max-width: 915px)
-  and (min-resolution: 2dppx) {
+  and (min-resolution: 3dppx) {
 }
 
 /* Portrait */
 @media only screen
   and (min-width: 412px)
   and (max-width: 915px)
-  and (min-resolution: 2dppx)
+  and (min-resolution: 3dppx)
   and (orientation: portrait) {
 }
 
@@ -150,11 +93,11 @@
 @media only screen
   and (min-width: 412px)
   and (max-width: 915px)
-  and (min-resolution: 2dppx)
+  and (min-resolution: 3dppx)
   and (orientation: landscape) {
 }
 
-/* ----------- Galaxy Z Fold 4 / 5 / 6 (Cover Screen) ----------- */
+/* ----------- Xiaomi MIX Fold 4 (Cover Screen) ----------- */
 /* Viewport: 360 x 800 @ 3x */
 
 /* Portrait and Landscape */
@@ -180,7 +123,7 @@
   and (orientation: landscape) {
 }
 
-/* ----------- Galaxy Z Fold 4 / 5 / 6 (Main Screen - Unfolded) ----------- */
+/* ----------- Xiaomi MIX Fold 4 (Main Screen - Unfolded) ----------- */
 /* Viewport: 884 x 1044 @ 2.5x */
 
 /* Portrait and Landscape */
@@ -206,8 +149,60 @@
   and (orientation: landscape) {
 }
 
-/* ----------- Galaxy A54 / A55 / A56 ----------- */
-/* Most popular mid-range Android globally */
+/* ----------- Redmi Note 13 / 14 ----------- */
+/* Most popular mid-range globally */
+/* Viewport: 393 x 873 @ 2.625x */
+
+/* Portrait and Landscape */
+@media only screen
+  and (min-width: 393px)
+  and (max-width: 873px)
+  and (min-resolution: 2dppx) {
+}
+
+/* Portrait */
+@media only screen
+  and (min-width: 393px)
+  and (max-width: 873px)
+  and (min-resolution: 2dppx)
+  and (orientation: portrait) {
+}
+
+/* Landscape */
+@media only screen
+  and (min-width: 393px)
+  and (max-width: 873px)
+  and (min-resolution: 2dppx)
+  and (orientation: landscape) {
+}
+
+/* ----------- Redmi Note 13 Pro+ / 14 Pro+ ----------- */
+/* Viewport: 412 x 915 @ 2.625x */
+
+/* Portrait and Landscape */
+@media only screen
+  and (min-width: 412px)
+  and (max-width: 915px)
+  and (min-resolution: 2dppx) {
+}
+
+/* Portrait */
+@media only screen
+  and (min-width: 412px)
+  and (max-width: 915px)
+  and (min-resolution: 2dppx)
+  and (orientation: portrait) {
+}
+
+/* Landscape */
+@media only screen
+  and (min-width: 412px)
+  and (max-width: 915px)
+  and (min-resolution: 2dppx)
+  and (orientation: landscape) {
+}
+
+/* ----------- POCO F6 / X6 Pro ----------- */
 /* Viewport: 412 x 915 @ 2.625x */
 
 /* Portrait and Landscape */

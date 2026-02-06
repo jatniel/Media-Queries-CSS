@@ -1,5 +1,5 @@
 /**
- * @package  Media Queries CSS - Google Pixel
+ * @package  Media Queries CSS - OnePlus
  * @author   Jatniel GUZMÁN
  * @license  MIT License
  * @link     https://github.com/jatniel
@@ -8,48 +8,17 @@
  */
 
 /* =========================================================
-   GOOGLE PIXEL - Modern Media Query Breakpoints
+   ONEPLUS - Modern Media Query Breakpoints
    =========================================================
 
-   Changes from legacy version:
-   - Replaced deprecated `device-width` / `device-height` with `width`
-   - Replaced `-webkit-device-pixel-ratio` with `resolution` (dppx)
-   - Removed discontinued models (Pixel 1, Pixel XL)
-   - Added Pixel 6 through 9 series (including a, Pro, Fold)
+   Covers flagship and mid-range OnePlus devices.
 
-   Note: Most Pixel phones share the 412 x 915 viewport.
-   They are differentiated by resolution (DPR).
+   Note: Android DPR values are often fractional.
+   Queries use the nearest integer floor for min-resolution.
 
    ========================================================= */
 
-/* ----------- Pixel 6 / 7 / 8 / 9 ----------- */
-/* Also covers: Pixel 6a / 7a / 8a / 9a */
-/* Viewport: 412 x 915 @ 2.625x */
-
-/* Portrait and Landscape */
-@media only screen
-  and (min-width: 412px)
-  and (max-width: 915px)
-  and (min-resolution: 2dppx) {
-}
-
-/* Portrait */
-@media only screen
-  and (min-width: 412px)
-  and (max-width: 915px)
-  and (min-resolution: 2dppx)
-  and (orientation: portrait) {
-}
-
-/* Landscape */
-@media only screen
-  and (min-width: 412px)
-  and (max-width: 915px)
-  and (min-resolution: 2dppx)
-  and (orientation: landscape) {
-}
-
-/* ----------- Pixel 6 Pro / 7 Pro ----------- */
+/* ----------- OnePlus 12 / 13 ----------- */
 /* Viewport: 412 x 915 @ 3.5x */
 
 /* Portrait and Landscape */
@@ -75,33 +44,59 @@
   and (orientation: landscape) {
 }
 
-/* ----------- Pixel 8 Pro / 9 Pro / 9 Pro XL ----------- */
-/* Viewport: 448 x 998 @ 3x */
+/* ----------- OnePlus 12R / 13R ----------- */
+/* Viewport: 412 x 915 @ 2.625x */
 
 /* Portrait and Landscape */
 @media only screen
-  and (min-width: 448px)
-  and (max-width: 998px)
-  and (min-resolution: 3dppx) {
+  and (min-width: 412px)
+  and (max-width: 915px)
+  and (min-resolution: 2dppx) {
 }
 
 /* Portrait */
 @media only screen
-  and (min-width: 448px)
-  and (max-width: 998px)
-  and (min-resolution: 3dppx)
+  and (min-width: 412px)
+  and (max-width: 915px)
+  and (min-resolution: 2dppx)
   and (orientation: portrait) {
 }
 
 /* Landscape */
 @media only screen
-  and (min-width: 448px)
-  and (max-width: 998px)
-  and (min-resolution: 3dppx)
+  and (min-width: 412px)
+  and (max-width: 915px)
+  and (min-resolution: 2dppx)
   and (orientation: landscape) {
 }
 
-/* ----------- Pixel Fold / Pixel 9 Pro Fold (Cover Screen) ----------- */
+/* ----------- OnePlus Nord 4 / CE 4 ----------- */
+/* Viewport: 412 x 915 @ 2.625x */
+
+/* Portrait and Landscape */
+@media only screen
+  and (min-width: 412px)
+  and (max-width: 915px)
+  and (min-resolution: 2dppx) {
+}
+
+/* Portrait */
+@media only screen
+  and (min-width: 412px)
+  and (max-width: 915px)
+  and (min-resolution: 2dppx)
+  and (orientation: portrait) {
+}
+
+/* Landscape */
+@media only screen
+  and (min-width: 412px)
+  and (max-width: 915px)
+  and (min-resolution: 2dppx)
+  and (orientation: landscape) {
+}
+
+/* ----------- OnePlus Open (Cover Screen) ----------- */
 /* Viewport: 360 x 800 @ 3x */
 
 /* Portrait and Landscape */
@@ -127,7 +122,7 @@
   and (orientation: landscape) {
 }
 
-/* ----------- Pixel Fold / Pixel 9 Pro Fold (Main Screen - Unfolded) ----------- */
+/* ----------- OnePlus Open (Main Screen - Unfolded) ----------- */
 /* Viewport: 884 x 1044 @ 2.5x */
 
 /* Portrait and Landscape */

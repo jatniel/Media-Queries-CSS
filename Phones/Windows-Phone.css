@@ -1,32 +1,43 @@
 /**
- * 
- * @package  Media Queries CSS iPhone
- * @author   Jatniel GUZMAN
+ * @package  Media Queries CSS - Windows Phone
+ * @author   Jatniel GUZMÁN
  * @license  MIT License
- * @link     https://twitter.com/jatnielguzman
+ * @link     https://github.com/jatniel
+ * @website  https://www.jatniel.dev
+ * @updated  2026
  */
 
+/* =========================================================
+   WINDOWS PHONE - Legacy Reference (Historical)
+   =========================================================
+
+   Microsoft discontinued Windows Phone in 2019.
+   These queries are preserved for historical reference only.
+
+   Syntax updated:
+   - Replaced deprecated `device-width` / `device-height` with `width`
+
+   ========================================================= */
+
 /* ----------- Windows Phone ----------- */
+/* Viewport: 480 x 800 */
 
 /* Portrait and Landscape */
-@media screen 
-  and (device-width: 480px) 
-  and (device-height: 800px) {
-
+@media only screen
+  and (min-width: 480px)
+  and (max-width: 800px) {
 }
 
 /* Portrait */
-@media screen 
-  and (device-width: 480px) 
-  and (device-height: 800px)  
+@media only screen
+  and (min-width: 480px)
+  and (max-width: 800px)
   and (orientation: portrait) {
-
 }
 
 /* Landscape */
-@media screen 
-  and (device-width: 480px) 
-  and (device-height: 800px) 
+@media only screen
+  and (min-width: 480px)
+  and (max-width: 800px)
   and (orientation: landscape) {
-
 }

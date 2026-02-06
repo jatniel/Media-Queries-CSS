@@ -1,35 +1,47 @@
 /**
- * 
- * @package  Media Queries CSS iPhone
- * @author   Jatniel GUZMAN
+ * @package  Media Queries CSS - HTC
+ * @author   Jatniel GUZMÁN
  * @license  MIT License
- * @link     https://twitter.com/jatnielguzman
+ * @link     https://github.com/jatniel
+ * @website  https://www.jatniel.dev
+ * @updated  2026
  */
 
+/* =========================================================
+   HTC - Legacy Reference (Historical)
+   =========================================================
+
+   HTC stopped manufacturing smartphones around 2020.
+   These queries are preserved for historical reference only.
+
+   Syntax updated:
+   - Replaced deprecated `device-width` / `device-height` with `width`
+   - Replaced `-webkit-device-pixel-ratio` with `resolution` (dppx)
+
+   ========================================================= */
+
 /* ----------- HTC One ----------- */
+/* Viewport: 360 x 640 @ 3x */
 
 /* Portrait and Landscape */
-@media screen 
-  and (device-width: 360px) 
-  and (device-height: 640px) 
-  and (-webkit-device-pixel-ratio: 3) {
-
+@media only screen
+  and (min-width: 360px)
+  and (max-width: 640px)
+  and (min-resolution: 3dppx) {
 }
 
 /* Portrait */
-@media screen 
-  and (device-width: 360px) 
-  and (device-height: 640px) 
-  and (-webkit-device-pixel-ratio: 3) 
+@media only screen
+  and (min-width: 360px)
+  and (max-width: 640px)
+  and (min-resolution: 3dppx)
   and (orientation: portrait) {
-
 }
 
 /* Landscape */
-@media screen 
-  and (device-width: 360px) 
-  and (device-height: 640px) 
-  and (-webkit-device-pixel-ratio: 3) 
+@media only screen
+  and (min-width: 360px)
+  and (max-width: 640px)
+  and (min-resolution: 3dppx)
   and (orientation: landscape) {
-
 }
