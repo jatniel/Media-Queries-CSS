@@ -1,22 +1,114 @@
 /**
- * 
- * @package  Media Queries CSS iPhone
- * @author   Jatniel GUZMAN
+ * @package  Media Queries CSS - Laptops
+ * @author   Jatniel GUZMÁN
  * @license  MIT License
- * @link     https://twitter.com/jatnielguzman
+ * @link     https://github.com/jatniel
+ * @website  https://www.jatniel.dev
+ * @updated  2026
  */
 
-/* ----------- Non-Retina Screens ----------- */
-@media screen 
-  and (min-device-width: 1200px) 
-  and (max-device-width: 1600px) 
-  and (-webkit-min-device-pixel-ratio: 1) { 
+/* =========================================================
+   LAPTOPS - Modern Media Query Breakpoints
+   =========================================================
+
+   Changes from legacy version:
+   - Replaced deprecated `device-width` with standard `width`
+   - Replaced `-webkit-device-pixel-ratio` with `resolution` (dppx)
+   - Organized by viewport ranges instead of specific devices
+   - Covers HD to 4K+ resolutions
+
+   Modern range syntax equivalent (Media Queries Level 4):
+     @media (width >= 1280px) and (width <= 1365px) { }
+     @media (resolution >= 2dppx) { }
+
+   ========================================================= */
+
+/* ----------- HD Laptops (1280px - 1365px) ----------- */
+/* Chromebooks, budget laptops, older 11"-13" notebooks */
+
+@media screen and (min-width: 1280px) and (max-width: 1365px) {
 }
 
-/* ----------- Retina Screens ----------- */
-@media screen 
-  and (min-device-width: 1200px) 
-  and (max-device-width: 1600px) 
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (min-resolution: 192dpi) { 
+/* HiDPI */
+@media screen
+  and (min-width: 1280px)
+  and (max-width: 1365px)
+  and (min-resolution: 2dppx) {
+}
+
+/* ----------- HD+ Laptops (1366px - 1439px) ----------- */
+/* Most common budget resolution, many 13"-14" Windows laptops */
+
+@media screen and (min-width: 1366px) and (max-width: 1439px) {
+}
+
+/* HiDPI */
+@media screen
+  and (min-width: 1366px)
+  and (max-width: 1439px)
+  and (min-resolution: 2dppx) {
+}
+
+/* ----------- Standard Laptops (1440px - 1599px) ----------- */
+/* MacBook Air/Pro scaled, 14" business laptops, Surface Laptop */
+
+@media screen and (min-width: 1440px) and (max-width: 1599px) {
+}
+
+/* HiDPI / Retina */
+@media screen
+  and (min-width: 1440px)
+  and (max-width: 1599px)
+  and (min-resolution: 2dppx) {
+}
+
+/* ----------- Large Laptops (1600px - 1919px) ----------- */
+/* 15"-16" displays, scaled high-res panels */
+
+@media screen and (min-width: 1600px) and (max-width: 1919px) {
+}
+
+/* HiDPI / Retina */
+@media screen
+  and (min-width: 1600px)
+  and (max-width: 1919px)
+  and (min-resolution: 2dppx) {
+}
+
+/* ----------- Full HD Laptops (1920px - 2559px) ----------- */
+/* Most popular resolution: 15.6" FHD, external FHD monitors */
+
+@media screen and (min-width: 1920px) and (max-width: 2559px) {
+}
+
+/* HiDPI / Retina */
+@media screen
+  and (min-width: 1920px)
+  and (max-width: 2559px)
+  and (min-resolution: 2dppx) {
+}
+
+/* ----------- QHD / 2K Laptops (2560px - 3839px) ----------- */
+/* High-end laptops unscaled, external QHD/ultrawide monitors */
+
+@media screen and (min-width: 2560px) and (max-width: 3839px) {
+}
+
+/* HiDPI */
+@media screen
+  and (min-width: 2560px)
+  and (max-width: 3839px)
+  and (min-resolution: 2dppx) {
+}
+
+/* ----------- 4K / UHD Laptops (3840px+) ----------- */
+/* Premium 4K displays, external 4K/5K monitors */
+
+@media screen and (min-width: 3840px) {
+}
+
+/* HiDPI */
+@media screen
+  and (min-width: 3840px)
+  and (min-resolution: 2dppx) {
 }
