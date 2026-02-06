@@ -1,127 +1,289 @@
 /**
- * 
- * @package  Media Queries CSS iPhone
- * @author   Jatniel GUZMAN
+ * @package  Media Queries CSS - iPad
+ * @author   Jatniel GUZMÁN
  * @license  MIT License
- * @link     https://twitter.com/jatnielguzman
+ * @link     https://github.com/jatniel
+ * @website  https://www.jatniel.dev
+ * @updated  2026
  */
 
-/* ----------- iPad 1, 2, Mini and Air ----------- */
+/* =========================================================
+   iPAD - Modern Media Query Breakpoints
+   =========================================================
+
+   Changes from legacy version:
+   - Replaced deprecated `device-width` with standard `width`
+   - Replaced `-webkit-min-device-pixel-ratio` with `resolution` (dppx)
+   - Kept legacy models as historical reference
+   - Added iPad Pro M1 through M5, iPad Air M1/M2, iPad mini 6th/7th gen
+   - Added iPad (10th gen) and iPad (A16) 11"
+   - Grouped models that share the same viewport
+
+   ========================================================= */
+
+/* ----------- iPad 1 / 2 / Mini (1st gen) ----------- */
+/* Legacy Reference (Historical) - Discontinued */
+/* Viewport: 768 x 1024 @ 1x */
 
 /* Portrait and Landscape */
-@media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
-  and (-webkit-min-device-pixel-ratio: 1) {
-
+@media only screen
+  and (min-width: 768px)
+  and (max-width: 1024px)
+  and (min-resolution: 1dppx) {
 }
 
 /* Portrait */
-@media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
-  and (orientation: portrait) 
-  and (-webkit-min-device-pixel-ratio: 1) {
-
+@media only screen
+  and (min-width: 768px)
+  and (max-width: 1024px)
+  and (min-resolution: 1dppx)
+  and (orientation: portrait) {
 }
 
 /* Landscape */
-@media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
-  and (orientation: landscape) 
-  and (-webkit-min-device-pixel-ratio: 1) {
-
+@media only screen
+  and (min-width: 768px)
+  and (max-width: 1024px)
+  and (min-resolution: 1dppx)
+  and (orientation: landscape) {
 }
 
-/* ----------- iPad 3, 4 and Pro 9.7" ----------- */
+/* ----------- iPad 3 / 4 / Air 1-2 / Mini 2-5 / Pro 9.7" / iPad 5th-6th gen ----------- */
+/* Legacy Reference (Historical) */
+/* Viewport: 768 x 1024 @ 2x */
 
 /* Portrait and Landscape */
-@media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
-  and (-webkit-min-device-pixel-ratio: 2) {
-
+@media only screen
+  and (min-width: 768px)
+  and (max-width: 1024px)
+  and (min-resolution: 2dppx) {
 }
 
 /* Portrait */
-@media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
-  and (orientation: portrait) 
-  and (-webkit-min-device-pixel-ratio: 2) {
-
+@media only screen
+  and (min-width: 768px)
+  and (max-width: 1024px)
+  and (min-resolution: 2dppx)
+  and (orientation: portrait) {
 }
 
 /* Landscape */
-@media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
-  and (orientation: landscape) 
-  and (-webkit-min-device-pixel-ratio: 2) {
-
+@media only screen
+  and (min-width: 768px)
+  and (max-width: 1024px)
+  and (min-resolution: 2dppx)
+  and (orientation: landscape) {
 }
 
-/* ----------- iPad Pro 10.5" ----------- */
+/* ----------- iPad 7th / 8th / 9th gen 10.2" ----------- */
+/* Legacy Reference (Historical) */
+/* Viewport: 810 x 1080 @ 2x */
 
 /* Portrait and Landscape */
-@media only screen 
-  and (min-device-width: 834px) 
-  and (max-device-width: 1112px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-
+@media only screen
+  and (min-width: 810px)
+  and (max-width: 1080px)
+  and (min-resolution: 2dppx) {
 }
 
 /* Portrait */
-/* Declare the same value for min- and max-width to avoid colliding with desktops */
-/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
-@media only screen 
-  and (min-device-width: 834px) 
-  and (max-device-width: 834px) 
-  and (orientation: portrait) 
-  and (-webkit-min-device-pixel-ratio: 2) {
-
+@media only screen
+  and (min-width: 810px)
+  and (max-width: 1080px)
+  and (min-resolution: 2dppx)
+  and (orientation: portrait) {
 }
 
 /* Landscape */
-/* Declare the same value for min- and max-width to avoid colliding with desktops */
-/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
-@media only screen 
-  and (min-device-width: 1112px) 
-  and (max-device-width: 1112px) 
-  and (orientation: landscape) 
-  and (-webkit-min-device-pixel-ratio: 2) {
-
+@media only screen
+  and (min-width: 810px)
+  and (max-width: 1080px)
+  and (min-resolution: 2dppx)
+  and (orientation: landscape) {
 }
 
-/* ----------- iPad Pro 12.9" ----------- */
+/* ----------- iPad Pro 10.5" / iPad Air (3rd gen) ----------- */
+/* Legacy Reference (Historical) */
+/* Viewport: 834 x 1112 @ 2x */
 
 /* Portrait and Landscape */
-@media only screen 
-  and (min-device-width: 1024px) 
-  and (max-device-width: 1366px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-
+@media only screen
+  and (min-width: 834px)
+  and (max-width: 1112px)
+  and (min-resolution: 2dppx) {
 }
 
 /* Portrait */
-/* Declare the same value for min- and max-width to avoid colliding with desktops */
-/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
-@media only screen 
-  and (min-device-width: 1024px) 
-  and (max-device-width: 1024px) 
-  and (orientation: portrait) 
-  and (-webkit-min-device-pixel-ratio: 2) {
-
+@media only screen
+  and (min-width: 834px)
+  and (max-width: 1112px)
+  and (min-resolution: 2dppx)
+  and (orientation: portrait) {
 }
 
 /* Landscape */
-/* Declare the same value for min- and max-width to avoid colliding with desktops */
-/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
-@media only screen 
-  and (min-device-width: 1366px) 
-  and (max-device-width: 1366px) 
-  and (orientation: landscape) 
-  and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen
+  and (min-width: 834px)
+  and (max-width: 1112px)
+  and (min-resolution: 2dppx)
+  and (orientation: landscape) {
+}
 
+/* ----------- iPad mini (6th / 7th gen) 8.3" ----------- */
+/* A15 Bionic / A17 Pro */
+/* Viewport: 744 x 1133 @ 2x */
+
+/* Portrait and Landscape */
+@media only screen
+  and (min-width: 744px)
+  and (max-width: 1133px)
+  and (min-resolution: 2dppx) {
+}
+
+/* Portrait */
+@media only screen
+  and (min-width: 744px)
+  and (max-width: 1133px)
+  and (min-resolution: 2dppx)
+  and (orientation: portrait) {
+}
+
+/* Landscape */
+@media only screen
+  and (min-width: 744px)
+  and (max-width: 1133px)
+  and (min-resolution: 2dppx)
+  and (orientation: landscape) {
+}
+
+/* ----------- iPad (10th gen) / iPad Air (4th-5th gen) / iPad Air M1-M2 11" / iPad (A16) 11" ----------- */
+/* Viewport: 820 x 1180 @ 2x */
+
+/* Portrait and Landscape */
+@media only screen
+  and (min-width: 820px)
+  and (max-width: 1180px)
+  and (min-resolution: 2dppx) {
+}
+
+/* Portrait */
+@media only screen
+  and (min-width: 820px)
+  and (max-width: 1180px)
+  and (min-resolution: 2dppx)
+  and (orientation: portrait) {
+}
+
+/* Landscape */
+@media only screen
+  and (min-width: 820px)
+  and (max-width: 1180px)
+  and (min-resolution: 2dppx)
+  and (orientation: landscape) {
+}
+
+/* ----------- iPad Pro 11" (1st-3rd gen) / iPad Pro 11" M1 / M2 ----------- */
+/* Viewport: 834 x 1194 @ 2x */
+
+/* Portrait and Landscape */
+@media only screen
+  and (min-width: 834px)
+  and (max-width: 1194px)
+  and (min-resolution: 2dppx) {
+}
+
+/* Portrait */
+@media only screen
+  and (min-width: 834px)
+  and (max-width: 1194px)
+  and (min-resolution: 2dppx)
+  and (orientation: portrait) {
+}
+
+/* Landscape */
+@media only screen
+  and (min-width: 834px)
+  and (max-width: 1194px)
+  and (min-resolution: 2dppx)
+  and (orientation: landscape) {
+}
+
+/* ----------- iPad Pro 11" M4 / M5 ----------- */
+/* Ultra Retina XDR - OLED tandem */
+/* Viewport: 834 x 1210 @ 2x */
+
+/* Portrait and Landscape */
+@media only screen
+  and (min-width: 834px)
+  and (max-width: 1210px)
+  and (min-resolution: 2dppx) {
+}
+
+/* Portrait */
+@media only screen
+  and (min-width: 834px)
+  and (max-width: 1210px)
+  and (min-resolution: 2dppx)
+  and (orientation: portrait) {
+}
+
+/* Landscape */
+@media only screen
+  and (min-width: 834px)
+  and (max-width: 1210px)
+  and (min-resolution: 2dppx)
+  and (orientation: landscape) {
+}
+
+/* ----------- iPad Pro 12.9" (all gens) / iPad Air 13" M2 ----------- */
+/* Viewport: 1024 x 1366 @ 2x */
+
+/* Portrait and Landscape */
+@media only screen
+  and (min-width: 1024px)
+  and (max-width: 1366px)
+  and (min-resolution: 2dppx) {
+}
+
+/* Portrait */
+@media only screen
+  and (min-width: 1024px)
+  and (max-width: 1366px)
+  and (min-resolution: 2dppx)
+  and (orientation: portrait) {
+}
+
+/* Landscape */
+@media only screen
+  and (min-width: 1024px)
+  and (max-width: 1366px)
+  and (min-resolution: 2dppx)
+  and (orientation: landscape) {
+}
+
+/* ----------- iPad Pro 13" M4 / M5 ----------- */
+/* Ultra Retina XDR - OLED tandem */
+/* Viewport: 1032 x 1376 @ 2x */
+
+/* Portrait and Landscape */
+@media only screen
+  and (min-width: 1032px)
+  and (max-width: 1376px)
+  and (min-resolution: 2dppx) {
+}
+
+/* Portrait */
+@media only screen
+  and (min-width: 1032px)
+  and (max-width: 1376px)
+  and (min-resolution: 2dppx)
+  and (orientation: portrait) {
+}
+
+/* Landscape */
+@media only screen
+  and (min-width: 1032px)
+  and (max-width: 1376px)
+  and (min-resolution: 2dppx)
+  and (orientation: landscape) {
 }
